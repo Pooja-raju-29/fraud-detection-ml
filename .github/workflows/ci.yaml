@@ -24,3 +24,7 @@ jobs:
 
       - name: Check Python files
         run: python -m compileall .
+
+
+      - name: Build Docker image
+        run: docker build -t fraud-detection-api .
